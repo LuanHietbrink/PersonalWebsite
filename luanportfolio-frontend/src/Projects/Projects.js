@@ -21,21 +21,27 @@ const Projects = () => {
       <ul>
         {projects.map(project => (
           <li key={project.id}>
-            <div className="details">
-              <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-                {project.name}
-              </a>
-              <p>{project.description}</p>
-            </div>
-            <div className="footer">
-              <p className="language">Language: {project.language}</p>
-              <p className="stars">Stars: {project.stargazers_count}</p>
-            </div>
+            <a
+              href={project.html_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              <div className="details">
+                <p className='heading'>{project.name}</p>
+                <p className='description'>{project.description}</p>
+              </div>
+              <div className="footer">
+                <p className="language">Language: {project.language}</p>
+                <p className="stars">Stars: {project.stargazers_count}</p>
+              </div>
+            </a>
           </li>
         ))}
       </ul>
     </div>
   );
+  
 };
 
 export default Projects;

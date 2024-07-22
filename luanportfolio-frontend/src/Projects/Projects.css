@@ -4,12 +4,18 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+body{
+  background-image: url("images/code-background-blurred.jpg");
+  background-repeat:no-repeat ;
+  background-size: cover;
+  
+}
 
 .projects-container h1 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 2em;
-  color: #333;
+  color: #f9f9f9;
 }
 
 .projects-container ul {
@@ -21,35 +27,55 @@
 }
 
 .projects-container li {
-  background: #f9f9f9;
+  background: transparent;
   padding: 20px;
   border-radius: 5px;
+  border: 2px solid #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform .3s;
 }
 
-.projects-container li a {
+.projects-container li:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #f9f9f9;
+  border: 2px solid;
+}
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.projects-container a {
   font-size: 1.5em;
-  color: #0366d6;
+  color: #f9f9f9;
   text-decoration: none;
   margin-bottom: 10px;
 }
 
-.projects-container li a:hover {
-  text-decoration: underline;
+.projects-container a:hover {
+  color: #f9f9f9;
 }
 
 .projects-container li p {
   margin: 5px 0;
+  font-size: 0.9em;
 }
 
 .projects-container li p.language,
 .projects-container li p.stars {
-  font-size: 0.9em;
-  color: #555;
+  font-size: 15px;
+  color: #f9f9f9;
 }
+
+.projects-container li p.description{
+  font-size: 15px;
+}
+
 
 .projects-container li .details {
   flex-grow: 1;
