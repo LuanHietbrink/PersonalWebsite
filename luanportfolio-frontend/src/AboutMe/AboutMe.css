@@ -5,14 +5,17 @@
     border-radius: 8px;
     padding: 20px;
     max-width: 100%;
-    text-align: center;
+    height: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
   }
   
+
+
   .about-me-title {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+    color: #282828;
+    font-size: 2rem;
+    margin-bottom: 10px;
   }
   
   .about-me-text {

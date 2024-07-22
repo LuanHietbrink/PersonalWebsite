@@ -18,7 +18,7 @@
 
 .projects-container ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 20px;
   list-style-type: none;
   padding: 0;
@@ -37,7 +37,7 @@
 }
 
 .projects-container li:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   cursor: pointer;
   color: #f9f9f9;
   border: 2px solid;
