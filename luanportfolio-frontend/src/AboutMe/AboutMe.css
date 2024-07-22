@@ -1,0 +1,32 @@
+/* src/AboutMe.css */
+.about-me-container {
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-me-title {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .about-me-text {
+    color: #555;
+    font-size: 1.125rem;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Match this duration with the setTimeout in the component */
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  

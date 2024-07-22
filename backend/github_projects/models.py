@@ -7,9 +7,4 @@ class Project(models.Model):
     language = models.CharField(max_length=50, blank=True, null=True)
     stargazers_count = models.IntegerField(default=0)
 
-class AthletePerformances(models.Model):
-    date = models.DateField()
-    result = models.CharField(max_length=100)
-    venue = models.CharField(max_length=100)
-    event = models.CharField(max_length=100)
-    athlete_id = models.CharField(max_length=100)
+

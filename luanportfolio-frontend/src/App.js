@@ -1,7 +1,7 @@
 import React from 'react';
 import Projects from './Projects/Projects';
-import ScrollTrack from './TrackInfo/Track';
 import './App.css';
+import AboutMe from './AboutMe/AboutMe';
 
 function App() {
   return (
@@ -16,9 +16,8 @@ function App() {
                 </a>
             </div>
           </header>
-          {/* <ScrollTrack /> */}
+          <AboutMe />
           <Projects />
-          
       </div>
   );
 }
