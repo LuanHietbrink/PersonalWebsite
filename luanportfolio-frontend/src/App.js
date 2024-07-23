@@ -6,6 +6,7 @@ import AboutMe from './AboutMe/AboutMe';
 function App() {
   return (
       <div className="App">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'></link>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></link>
           <header className="App-header">
             <div class="name">Luan Hietbrink</div>
@@ -18,6 +19,7 @@ function App() {
           </header>
           <AboutMe />
           <Projects />
+          <footer>Email me at <a href='https://luan.hietbrink@gmail.com'>luan.hietbrink@gmail.com</a></footer>
       </div>
   );
 }

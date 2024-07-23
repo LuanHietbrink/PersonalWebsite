@@ -1,18 +1,21 @@
 .App {
   text-align: center;
+  background-color: #F5F5F5;
 }
 .name {
   font-size: 50px;
   font-weight: bold;
 }
-
+body{
+  font-family: 'Poppins';
+}
 .App-header {
-  background-color: #282c34;
+  background-color: #0F1626;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  color: white;
+  color: #F5F5F5;
 
 }
 
@@ -28,31 +31,33 @@
 }
 
 .social-links a {
-  color: white;
+  color: #F5F5F5;
   text-decoration: none;
   font-size: 50px;
   margin-left: 25px;
 }
 
 .social-links a:hover {
-  color: #ddd;
+  color: #FF533D;
 }
 
 
 footer {
-  margin-top: 20px;
+  /* margin-top: 2px; */
+  padding: 20px;
   text-align: center;
-  background-color: #282c34;
-  color: white;
+  background-color: #0F1626;
+  color: #F5F5F5;
+  font-size: 20px;
 }
 
 footer a {
-  color: white;
+  color: #F5F5F5;
   text-decoration: none;
 }
 
 footer a:hover {
-  text-decoration: underline;
-  color: #61dafb;
+  text-decoration: none;
+  color: #FF533D;
 }
 

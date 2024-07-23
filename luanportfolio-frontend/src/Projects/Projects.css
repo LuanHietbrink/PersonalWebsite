@@ -1,46 +1,51 @@
 /* Projects.css */
 .projects-container {
-  background-image: url("images/code-background-blurred.jpg");
-  background-repeat:no-repeat ;
-  background-size: cover;
+  background-color: #0F1626;
   padding: 20px;
+  margin: 10px;
   max-width:100%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
-
+.projects{
+  flex-grow: 1;
+}
 .projects-container h1 {
   text-align: center;
   margin-bottom: 20px;
+  margin-right: 20px;
   font-size: 2em;
-  color: #f9f9f9;
+  color: #f5f5f5;
 }
 
 .projects-container ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
   list-style-type: none;
   padding: 0;
 }
 
 .projects-container li {
-  background: transparent;
+  color:#f5f5f5;
+  background-color: #ff533d;
   padding: 20px;
   border-radius: 5px;
-  border: 2px solid #f9f9f9;
+  border: 2px solid #ff533d;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: transform .3s;
+  
 }
 
 .projects-container li:hover {
   transform: scale(1.05);
   cursor: pointer;
-  color: #f9f9f9;
-  border: 2px solid;
+  border: 2px solid #ff533d;
 }
 .project-link {
   display: block;
@@ -50,14 +55,11 @@
 
 .projects-container a {
   font-size: 1.5em;
-  color: #f9f9f9;
+  font-weight: bolder;
   text-decoration: none;
   margin-bottom: 10px;
 }
 
-.projects-container a:hover {
-  color: #f9f9f9;
-}
 
 .projects-container li p {
   margin: 5px 0;
@@ -67,7 +69,7 @@
 .projects-container li p.language,
 .projects-container li p.stars {
   font-size: 15px;
-  color: #f9f9f9;
+  color:#f5f5f5;
 }
 
 .projects-container li p.description{

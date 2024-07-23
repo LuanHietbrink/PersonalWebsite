@@ -17,8 +17,9 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <h1>My GitHub Projects</h1>
-      <ul>
+        <h1>My GitHub Projects</h1>
+      <div className='projects'>
+        <ul>
         {projects.map(project => (
           <li key={project.id}>
             <a
@@ -35,10 +36,13 @@ const Projects = () => {
                 <p className="language">Language: {project.language}</p>
                 <p className="stars">Stars: {project.stargazers_count}</p>
               </div>
-            </a>
-          </li>
-        ))}
-      </ul>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      
+      
     </div>
   );
   
