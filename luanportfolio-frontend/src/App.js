@@ -19,7 +19,7 @@ function App() {
           </header>
           <AboutMe />
           <Projects />
-          <footer>Email me at <a href='https://luan.hietbrink@gmail.com'>luan.hietbrink@gmail.com</a></footer>
+          <footer>Email me at <a href='mailto: luan.hietbrink@gmail.com'>luan.hietbrink@gmail.com</a></footer>
       </div>
   );
 }
